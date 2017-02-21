@@ -1,7 +1,11 @@
-name = 'Annie'
-employee_number = 7
+my_name = 'Annie'
+my_employee_number = 7
 
-puts "Hi, #{name}. Your employee number is: #{employee_number}"
+def greet(name, employee_number)
+  puts "Hi, #{name}. Your employee number is: #{employee_number}"
+end
+
+greet my_name, my_employee_number
 
 my_hobbies = ['yoga', 'running', 'cooking', 'singing', 'decorating', 'building']
 
