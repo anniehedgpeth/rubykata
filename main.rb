@@ -20,15 +20,16 @@ class Person
       puts 'You have too much going on, and you need to get rid of something.'
     elsif @hobbies.count.zero?
       puts 'You need to learn something.'
+    elsif @hobbies == 'mountain biking'; 'biking'; 'rock climbing'
+      puts "Meh, I'm not as into that."
     end
   end
-
 end
 
 employees = Hash[
   'Annie' => Person.new('Annie', 7, ['yoga', 'running', 'cooking', 'singing', 'decorating', 'building']),
-  'Michael'=> Person.new('Michael', 8, []),
-  'Ryan'=> Person.new('Ryan', 9, ['video games'])
+  'Michael' => Person.new('Michael', 8, ['mountain biking']),
+  'Ryan' => Person.new('Ryan', 9, ['video games'])
 ]
 
 puts 'Enter your name: '
