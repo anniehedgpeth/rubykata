@@ -3,6 +3,9 @@ my_employee_number = 7
 
 def greet(name, employee_number)
   puts "Hi, #{name}. Your employee number is: #{employee_number}"
+  if name =~ /Ann/
+    puts 'Your name is alot like the creator of this program.'
+  end
 end
 
 greet my_name, my_employee_number
