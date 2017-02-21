@@ -1,1 +1,4 @@
-puts 'Hi, Annie'
+name = 'Annie'
+
+puts "Hi, #{name}"
+
