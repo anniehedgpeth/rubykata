@@ -3,10 +3,14 @@ employee_number = 7
 
 puts "Hi, #{name}. Your employee number is: #{employee_number}"
 
-hobbies = []
+my_hobbies = ['yoga', 'running', 'cooking', 'singing', 'decorating', 'building']
 
-if hobbies.count > 5
-  puts 'You have too much going on, and you need to get rid of something.'
-elsif hobbies.count == 0
-  puts 'You need to learn something.'
+def comment_on_hobbies(hobbies)
+  if hobbies.count > 5
+    puts 'You have too much going on, and you need to get rid of something.'
+  elsif hobbies.count.zero?
+    puts 'You need to learn something.'
+  end
 end
+
+comment_on_hobbies my_hobbies
