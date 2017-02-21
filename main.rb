@@ -24,6 +24,16 @@ class Person
       puts "Meh, I'm not as into that."
     end
   end
+
+  def original_employee?
+    @employee_number < 20
+  end
+
+# You can't use @name outside of the Class unless you return it from a method. Then you can call the method elsewhere in the script. "return" is redundant, because the last statement in every method is what gets returned in Ruby, but I wanted to leave it there so that I could remember.
+  def name
+    return @name
+  end
+
 end
 
 employees = Hash[
@@ -40,3 +50,6 @@ person = employees[name.rstrip]
 
 person.greet
 person.comment_on_hobbies
+
+puts person.name
+puts person.original_employee?
