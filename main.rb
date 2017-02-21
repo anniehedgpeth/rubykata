@@ -25,6 +25,13 @@ class Person
 
 end
 
+employees = {
+  Annie: Person.new('Annie', 7, ['yoga', 'running', 'cooking', 'singing', 'decorating', 'building']),
+  Michael: Person.new('Michael', 8, []),
+  Ryan: Person.new('Ryan', 9, ['video games'])
+}
+
+
 # This calls the initialize method because I'm "initializing" a new person in that Class - creating a "Person" object.
 my_name = 'Annie'
 my_employee_number = 7
