@@ -1,3 +1,5 @@
+# Like a template, a Cass has methods defined in it. The object is the instantiation of the class. Class:Object :: Blueprint:House
+
 class Person
 
   def initialize(name, employee_number, hobbies)
