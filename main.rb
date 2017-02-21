@@ -25,23 +25,17 @@ class Person
 
 end
 
-employees = {
-  Annie: Person.new('Annie', 7, ['yoga', 'running', 'cooking', 'singing', 'decorating', 'building']),
-  Michael: Person.new('Michael', 8, []),
-  Ryan: Person.new('Ryan', 9, ['video games'])
-}
+employees = Hash[
+  'Annie' => Person.new('Annie', 7, ['yoga', 'running', 'cooking', 'singing', 'decorating', 'building']),
+  'Michael'=> Person.new('Michael', 8, []),
+  'Ryan'=> Person.new('Ryan', 9, ['video games'])
+]
 
+puts 'Enter your name: '
+# gets retrieves the previous input from the user
+name = gets
+# rstrip strips the white space from the end of the input
+person = employees[name.rstrip]
 
-# This calls the initialize method because I'm "initializing" a new person in that Class - creating a "Person" object.
-my_name = 'Annie'
-my_employee_number = 7
-my_hobbies = ['yoga', 'running', 'cooking', 'singing', 'decorating', 'building']
-
-me = Person.new my_name, my_employee_number, my_hobbies
-you = Person.new 'Michael', 8, []
-
-me.greet
-you.greet
-
-me.comment_on_hobbies
-you.comment_on_hobbies
+person.greet
+person.comment_on_hobbies
